@@ -37,7 +37,9 @@ This function should only modify configuration layer settings."
      ruby
      html
      swift
+     dap
      (rust :variables rust-backend 'racer)
+     (java :variables java-backend 'lsp)
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
@@ -45,9 +47,9 @@ This function should only modify configuration layer settings."
      ;; ----------------------------------------------------------------
      helm
      lsp
-     ;; auto-completion
+     auto-completion
      ;; better-defaults
-     ;; company-mode
+     ;; company-lsp
      emacs-lisp
      osx
      spotify
@@ -486,6 +488,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ (setq eclim-executable "/Users/omar/eclipse/jee-2018-12/Eclipse.app/Contents/Eclipse/eclimd")
  '(ansi-color-names-vector
    ["#1d2127" "#aa4450" "#858253" "#d0770f" "#86aed5" "#8686ae" "#5b8583" "#fdfdd5"])
  '(custom-safe-themes
